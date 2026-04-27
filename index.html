@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary, Love ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #ffe6ea, #fffaf0);
+      color: #62374e;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    h1, h2, h3 {
+      font-family: 'Dancing Script', cursive;
+      color: #ff6f91;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    p {
+      line-height: 1.5;
+    }
+
+    /* Welcome Section */
+    .welcome {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #ffd1dc, #fff);
+      text-align: center;
+    }
+    .welcome h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out both;
+    }
+    .welcome h3 {
+      font-size: 1.5rem;
+      color: #62374e;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Photo Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 550px;
+      height: 300px;
+      object-fit: cover;
+      border: 4px solid #ffe6f0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Love Message Section */
+    .message {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: #fff4f6;
+      border-radius: 8px;
+      border: 2px dashed #ff88aa;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 2;
+      color: #62374e;
+    }
+
+    /* Ending Section */
+    .ending {
+      background: #ffe6ee;
+      padding: 40px 20px;
+      font-size: 1.5rem;
+      color: #62374e;
+      border-radius: 10px;
+      margin: 40px auto;
+      width: 80%;
+      max-width: 600px;
+    }
+    .ending span {
+      color: #ff6f91;
+      font-size: 2rem;
+    }
+
+    /* Floating Hearts Animation */
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: radial-gradient(circle at center, #ff9aa8, transparent);
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-600px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div class="floating-hearts"></div>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h1>Happy Anniversary, My DJM! ❤️</h1>
+    <h3>Made with love, just for you!.</h3>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery">
+    <h2>Our Beautiful Memories</h2>
+    <div class="gallery">
+      <img src="1st date.jpg" alt="Memory 1" onclick="enlargeImage('1st date.jpg')">
+      <img src="2nd date.jpg" alt="Memory 2" onclick="enlargeImage('2nd date.jpg')">
+      <img src="3rd date.jpg" alt="Memory 3" onclick="enlargeImage('3rd date.jpg')">
+      <img src="4th date.jpg" alt="Memory 4" onclick="enlargeImage('4th date.jpg')">
+      <img src="5th date.jpg" alt="Memory 5" onclick="enlargeImage('5th date.jpg')">
+      <img src="6th date.jpg" alt="Memory 6" onclick="enlargeImage('6th date.jpg')">
+      <img src="7th date.jpg" alt="Memory 7" onclick="enlargeImage('7th date.jpg')">
+      <img src="8th date.jpg" alt="Memory 8" onclick="enlargeImage('8th date.jpg')">
+      <img src="9th date.jpg" alt="Memory 9" onclick="enlargeImage('9th date.jpg')">
+      <img src="10 date.jpg" alt="Memory 10" onclick="enlargeImage('10 date.jpg')">
+      <img src="11 date.jpg" alt="Memory 11" onclick="enlargeImage('11 date.jpg')">
+      <img src="12 date.jpg" alt="Memory 11" onclick="enlargeImage('12 date.jpg')">
+      <img src="13 date.jpg" alt="Memory 11" onclick="enlargeImage('13 date.jpg')">
+      <img src="14 date.jpg" alt="Memory 11" onclick="enlargeImage('14 date.jpg')">
+      <img src="15 date.jpg" alt="Memory 11" onclick="enlargeImage('15 date.jpg')">
+      <img src="16 date.jpg" alt="Memory 11" onclick="enlargeImage('16 date.jpg')">
+      <!-- Add more photos as needed -->
+    </div>
+  </section>
+
+  <!-- Love Message Section -->
+  <section id="message">
+    <h2>A Love Letter Just for You!!</h2>
+    <div class="message">
+        happy anniversary, my babaa, my bawbii, my loveyy!!<br><br>
+        grabe, kung iisipin natin lahat ng pinagdaanan natin, ang dami na pala talaga. hindi naging perfect ang relationship natin, and honestly that’s what makes it real. we had our misunderstandings, tampuhan, struggles, tears, moments of doubt, and days na sobrang bigat na parang gusto nalang natin mapagod. pero sa kabila ng lahat, nandito pa rin tayo. still choosing each other, still holding on, still trying.
+        and that’s something i will always be proud of.<br><br>
+        kasi hindi lang tayo naging magkasintahan sa masasayang araw, naging kakampi tayo sa mahihirap na panahon. we didn’t just love each other when things were easy, we loved each other even when it took effort, patience, healing, and understanding. and para sakin, dun mas naging totoo ang love natin.<br><br>
+        thank you for staying through every season of us. thank you for choosing to work things out with me when walking away would’ve been easier. thank you for fighting for this relationship with me and for protecting what we have, even in times na fragile tayo.<br><br>
+        ang daming beses na sinubok tayo, pero ang ganda isipin na kahit ilang beses tayo nasaktan, natuto pa rin tayong ayusin, magpatawad, at bumalik sa isa’t isa. hindi naging madali, pero ginawa nating worth it.<br><br>
+        sobrang proud ako sa pagmamahal na binuo natin, because it was not built only from kilig and sweet moments, but also from trust, sacrifice, forgiveness, and choosing each other over and over again.<br><br>
+        you taught me that love is not just about butterflies and excitement. love is staying. love is patience. love is understanding. love is protecting each other’s hearts. and most of all, love is choosing someone even when things become difficult.
+        and that’s what we did.<br><br>
+        we kept this relationship strong. and inalagaan natin kahit minsan sugatan na, kahit minsan pagod na, kahit minsan naliligaw na. we kept coming back to each other, and that means everything to me.<br><br>
+        thank you for loving me despite my flaws. thank you for seeing me at my worst and still giving me reasons to become better. thank you for your patience, your softness, your care, and the way you make me feel loved even in the smallest things.<br><br>
+        thank you for all the memories we created together from the simple days na magkasama lang tayo, to the moments we laughed until our stomach hurt, to the quiet times na presence lang ng isa’t isa sapat na. those moments may seem small, but they mean the world to me of course.<br><br>
+        and even our struggles became part of a story i would still choose.<br><br>
+        because every pain we survived made us stronger.
+        every misunderstanding taught us something.
+        every healed wound made us love deeper.
+        every challenge made our bond stronger.<br><br>
+        and through all of that, i found a love worth fighting for.<br><br>
+        ikaw yung pahinga ko, comfort ko, safe place ko. ikaw yung taong gusto kong makasama sa victories and failures, in peace and chaos, in easy days and hard days. because being with you taught me that love is not finding someone perfect it's just finding someone worth building with.<br><br>
+        after everything we’ve been through, mas lalo lang akong naging sigurado na ikaw pa rin ang gusto kong piliin araw-araw.<br><br>
+        here’s to the love we fought for,
+        the relationship we kept safe,
+        the storms we survived,
+        the wounds we healed,
+        and the many more years i want to spend loving you, growing with you, and choosing you.<br><br>
+    </div>
+  </section>
+
+  <!-- Ending Section -->
+  <section id="ending">
+    <div class="ending">
+      <p>I love you alwayss Darlenee ❤️</p>
+    </div>
+  </section>
+
+  <script>
+    // Floating hearts animation
+    function createFloatingHearts() {
+      const container = document.querySelector('.floating-hearts');
+      setInterval(() => {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 2 + 4 + 's';
+        container.appendChild(heart);
+        setTimeout(() => heart.remove(), 7000);
+      }, 300);
+    }
+    createFloatingHearts();
+
+    // Enlarge gallery images
+    function enlargeImage(src) {
+      const lightbox = document.createElement('div');
+      lightbox.style.position = 'fixed';
+      lightbox.style.top = 0;
+      lightbox.style.left = 0;
+      lightbox.style.width = '100%';
+      lightbox.style.height = '100%';
+      lightbox.style.backgroundColor = 'rgba(0,0,0,0.8)';
+      lightbox.style.display = 'flex';
+      lightbox.style.justifyContent = 'center';
+      lightbox.style.alignItems = 'center';
+      lightbox.style.cursor = 'pointer';
+      lightbox.onclick = () => lightbox.remove();
+      const img = document.createElement('img');
+      img.src = src;
+      img.style.maxWidth = '90%';
+      img.style.maxHeight = '80%';
+      img.style.borderRadius = '10px';
+      img.style.boxShadow = '0 10px 20px rgba(255,255,255,0.3)';
+      lightbox.appendChild(img);
+      document.body.appendChild(lightbox);
+    }
+  </script>
+</body>
+</html>
